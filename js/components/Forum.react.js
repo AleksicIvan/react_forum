@@ -24,13 +24,20 @@ var Forum = React.createClass({
 
     render: function() {
 
-        return React.createElement(
-            'div',
-            //cemu null?
-            null,
-            //child Forum-a je ForumHeader iz fajla ForumHeader.react.js
-            //this.state omogucuje data dalje svakom child 
-            React.createElement(ForumHeader, { allAnswers: this.state.allAnswers })
-        );
+        return (
+
+            <div>
+                <ForumHeader />
+           
+                <div className="container">
+                    <ForumQuestion />
+                    <hr />
+                    <ForumAnswers allAnswers={this.state.allAnswers} />
+                    <hr />
+                    <h4>Add an answer</h4>
+                    <ForumAddAnswerBox />
+                </div>
+            </div>
+        ); 
     }
 });

@@ -1,0 +1,15 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "simple app for react learning",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel js -d lib --presets react"
+  },
+  "author": "Tony Alicea",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-react": "^6.11.1"
+  }
+}
